@@ -1,0 +1,62 @@
+<html >
+<head>
+<title>Tech Masters Academy</title>
+    <script type="text/javascript">
+        function validar ()
+        {
+        var a = document.formulario.nome.value;
+        var b = document.formulario.email.value;
+        var c = document.formulario.assunto.value;
+        var d = document.formulario.descricao.value;
+        if(a=="")
+        {
+            alert('O campo Nome está vazio');document.formulario.nome.focus();
+        }
+        
+        
+        else if(b=="")
+        {
+            alert('O campo email  está vazio'); document.formulario.email.focus();
+        }
+        else if(c=="")
+        {
+            alert('O campo assunto está vazio');document.formulario.assunto.focus();
+        }
+        else if("d==")
+        {
+            alert('O campo descrição está vazio'); document.formulario.descricao.focus()
+        }
+        }
+
+    </script>
+    </head>
+
+<body bgcolor= #D6EBFF>
+
+<h1> <u>Fale Conosco </u> </h1>
+<form name="formulario" action="fale.html" method="post">
+
+
+    <label>
+
+        <p>Informe o Nome: <input type="text" name="nome"><br> </p>
+
+        <p>Informe o email: <input type="password" name="email"><br></p>
+
+        <p>Informe a Senha: <input type="password" name="assunto"><br></p>
+
+        <p>Descrição: <textarea cols="50" rows="5" name="descricao" ></textarea> </p>
+
+        <input type= "submit" value= "Enviar">
+
+        <input type= "reset" value="limpar">
+
+        <input type="button" value="Validar" onclick="validar();">
+
+
+    </label>
+    <br>
+    <h5> <a href="principal.html" target="mainFrame"> Voltar a Pagina Principal </a> </h5>
+</form>
+</body>
+</html>
